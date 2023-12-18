@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TIC TAC TOE</h1>
+    <div id="grid">
+        <div class="cell" id="0"></div>
+        <div class="cell" id="1"></div>
+        <div class="cell" id="2"></div>
+        <div class="cell" id="3"></div>
+        <div class="cell" id="4"></div>
+        <div class="cell" id="5"></div>
+        <div class="cell" id="6"></div>
+        <div class="cell" id="7"></div>
+        <div class="cell" id="8"></div>
+    </div>
+
+    <div id="player-turn"></div>
+    <button class="restart-button" id="restartBtn">Restart</button>
+    <button class="home-button" onclick="goToHome()">Home</button>
+
+    <!-- Include both friend and computer scripts directly -->
+    
+    <script src="computer_script.js"></script>
+    <script src="friend_script.js"></script>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const mode = urlParams.get('mode');
+    
+        // Run the relevant script based on the mode
+        if (mode === 'computer') {
+            initComputerMode(); // Assuming there is an initialization function in computer_script.js
+        } else if (mode === 'friend') {
+            initFriendMode(); // Assuming there is an initialization function in friend_script.js
+        }
+    </script>
+</body>
+</html>

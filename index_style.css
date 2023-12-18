@@ -1,0 +1,30 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222; /* Use the background color of your main game screen */
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 20px; /* Add margin below the heading */
+}
+
+.game-mode-button {
+    background-color: #4caf50; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 1.5em; /* Button font size */
+    padding: 10px 20px; /* Button padding */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Add margin to the top */
+}
+
+.game-mode-button:hover {
+    background-color: #45a049; /* Button background color on hover */
+}

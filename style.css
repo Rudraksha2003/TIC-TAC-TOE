@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+    color: #fff;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+}
+
+#player-turn {
+    font-size: 1.5em;
+    margin-top: 20px; /* Add margin to the top */
+    margin-bottom: 20px;
+}
+
+.restart-button {
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.restart-button:hover {
+    background-color: #45a049;
+}
+
+.winning-box-x {
+    background-color: #4caf50; /* Adjust the color for X */
+}
+
+.winning-box-o {
+    background-color: #2196f3; /* Adjust the color for O */
+}
+
+.home-button {
+    background-color: #2196f3; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 1em; /* Button font size */
+    padding: 10px 20px; /* Button padding */
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+.home-button:hover {
+    background-color: #0b7dda; /* Button background color on hover */
+}
